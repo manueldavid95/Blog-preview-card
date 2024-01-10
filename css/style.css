@@ -1,0 +1,105 @@
+/* variables del proyecto */
+:root {
+    --yellow: #F4D04E;
+    --white: #FFFFFF;
+    --gray: #808080;
+    --black: #121212;
+    --font: 'Figtree', sans-serif;
+}
+
+/* utilidades */
+
+/* estilos del sitio */
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    font-family: var(--font);
+}
+
+.card{
+    max-width: 370px;
+    padding: 23px;
+    margin: 0 25px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    box-shadow: 11px 9px 0px 0px #000;
+    background-color: var(--white);
+}
+
+.card-figure{
+    margin-bottom: 20px;
+}
+
+.card-figure > img {
+    border-radius: 10px;
+}
+
+.card-tag {
+    margin: 0;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-weight: 800;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: var(--yellow);
+}
+
+.card-fecha {
+    margin: 0;
+}
+
+.card-titulo {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.card-texto {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--gray);
+}
+
+.card-perfil {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-perfil-figure > img {
+    width: 30px;
+    height: 30px;
+}
+
+.card-perfil-titulo {
+    margin: 0;
+    font-size: 16px;
+}
+
+@media(min-width: 768px) {
+    .card {
+        margin: 0;
+    }
+}
+
+@media(min-width: 1024px) {
+    .card-titulo {
+        font-size: 20px;
+    }
+
+    .card-titulo:hover {
+        color: var(--yellow);
+    }
+
+    .card-perfil {
+        gap: 10px;
+    }
+
+    .card-tag {
+        padding: 5px 25px;
+    }
+}
